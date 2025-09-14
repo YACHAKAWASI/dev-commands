@@ -4,7 +4,11 @@
 ```bash
 git init
 
+
+
 2) Configura tu identidad
+
+```bash
 
 git config user.name "YACHAKAWASI"
 git config user.email "louis9ramos@gmail.com"
