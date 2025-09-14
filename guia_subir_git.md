@@ -22,3 +22,9 @@ git config --global credential.helper store
 
 6) empujar 
 git push -u origin master
+
+7)  subir actualziacion
+
+git add .
+git commit -m "Agrego guia de comandos Git"
+git push
