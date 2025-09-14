@@ -34,3 +34,16 @@ mkdir -p src
 apt update && apt install -y python3-colcon-common-extensions
 colcon build
 source install/setup.bash
+
+
+# 6) para configurar comunicacion DSS  docker con raspberry pi
+
+```bash
+sudo docker run -it --rm \
+  --network host \
+  -e ROS_DOMAIN_ID=0 \
+  -e ROS_LOCALHOST_ONLY=0 \
+  ros2-humble-base:latest
+
+```
+
