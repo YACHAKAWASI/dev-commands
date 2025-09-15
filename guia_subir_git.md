@@ -15,7 +15,10 @@ git config user.email "louis9ramos@gmail.com"
 ```bash
 git add instalacion_docker.md
 ```
-
+para  todo los archivo en el proyecto
+```bash
+git add .
+```
 ## 4) Crea el commit
 ```bash
 git commit -m "Subo guia instalacion_docker.md"
