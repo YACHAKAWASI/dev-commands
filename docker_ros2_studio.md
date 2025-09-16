@@ -47,7 +47,17 @@ echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 source /opt/ros/humble/setup.bash
 ```
 
-## 6. EJECUTAR NODO TALKER
+## 6 Arranca tu contenedor en segundo plano
+
+```bash
+docker start ros2_humble
+```
+# 6.1 cada nueva terminal, para abrir un contenedor
+```bash
+docker exec -it ros2_humble bash
+```
+
+## 7. EJECUTAR NODO TALKER
 ```bash
 # Ejecutar nodo que publica mensajes
 ros2 run demo_nodes_cpp talker
@@ -55,13 +65,11 @@ ros2 run demo_nodes_cpp talker
 
 ## 7. CONECTARSE AL CONTENEDOR Y EJECUTAR LISTENER
 ```bash
-# Conectarse al contenedor  en otra terminal
-docker start -ai ros2_humble
+# Conectarse al contenedor en ejecución
+docker exec -it ros2_humble bash
+```
 
-
-# Configurar ROS2
-source /opt/ros/humble/setup.bash
-
+```bash
 # Ejecutar nodo que escucha mensajes
 ros2 run demo_nodes_cpp listener
 ```
@@ -72,4 +80,4 @@ ros2 run demo_nodes_cpp listener
 ros2 run foxglove_bridge foxglove_bridge --ros-args -p port:=8765 -p address:="0.0.0.0"
 ```
 
-nota :   en fox glove studio colcoar  esto :ws://localhost:8765
+nota :   en fox glove studio colocar esto : ws://localhost:8765
