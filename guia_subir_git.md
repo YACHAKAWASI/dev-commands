@@ -24,12 +24,23 @@ git add .
 git commit -m "Subo guia instalacion_docker.md"
 ```
 
-## 5) Conecta con tu repo en GitHub
+## 5) Conecta con tu repo en GitHub linux
 ```bash
 git branch -M master
 git remote add origin https://github.com/YACHAKAWASI/dev-commands.git 2>/dev/null || \
 git remote set-url origin https://github.com/YACHAKAWASI/dev-commands.git
 ```
+
+## 5.1) Conecta con tu repo en GitHub  windows
+```
+git branch -M master
+git remote remove origin 2>$null
+git remote add origin https://github.com/YACHAKAWASI/dev-commands.git
+```
+
+
+
+
 
 ## (Opcional) Guarda credenciales para no escribir el token cada vez
 ```bash
