@@ -55,8 +55,9 @@ ros2 run demo_nodes_cpp talker
 
 ## 7. CONECTARSE AL CONTENEDOR Y EJECUTAR LISTENER
 ```bash
-# Conectarse al contenedor en ejecución
-docker exec -it ros2_humble bash
+# Conectarse al contenedor  en otra terminal
+docker start -ai ros2_humble
+
 
 # Configurar ROS2
 source /opt/ros/humble/setup.bash
