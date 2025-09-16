@@ -70,3 +70,5 @@ ros2 run demo_nodes_cpp listener
 # Ejecutar Foxglove Bridge para visualización
 ros2 run foxglove_bridge foxglove_bridge --ros-args -p port:=8765 -p address:="0.0.0.0"
 ```
+
+nota :   en fox glove studio colcoar  esto :ws://localhost:8765
